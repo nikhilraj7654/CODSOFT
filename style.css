@@ -1,0 +1,198 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #0f0f0f;
+  color: #f0f0f0;
+}
+
+/* ===== Header ===== */
+header {
+  background: #111;
+  border-bottom: 1px solid #333;
+  padding: 20px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f57c00;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f57c00;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 50px;
+  background: #0f0f0f;
+  flex-wrap: wrap;
+}
+
+.hero-left h2 {
+  font-size: 24px;
+  color: #aaa;
+}
+
+.hero-left h1 {
+  font-size: 42px;
+  margin: 10px 0;
+}
+
+.hero-left span {
+  color: #f57c00;
+}
+
+.typing {
+  color: #ff4081;
+  font-weight: bold;
+}
+
+.btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 12px 24px;
+  background: #f57c00;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff9800;
+}
+
+/* Circular Profile */
+.profile-pic {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #f57c00;
+  box-shadow: 0 0 30px rgba(255, 140, 0, 0.3);
+}
+
+/* ===== Sections ===== */
+section {
+  padding: 60px 50px;
+}
+
+section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #f57c00;
+}
+
+.about p, .contact p, .resume p {
+  max-width: 800px;
+  line-height: 1.8;
+}
+
+/* Skills */
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+}
+
+.skills ul li {
+  background: #1e1e1e;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  color: #f0f0f0;
+}
+
+/* Projects */
+.project-item {
+  background: #1c1c1c;
+  padding: 20px;
+  border-left: 4px solid #f57c00;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+/* Resume */
+.resume a {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Contact */
+.socials {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #f57c00;
+  font-weight: bold;
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-right {
+    margin-top: 30px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}
