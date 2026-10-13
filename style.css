@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #121212; /* Dark background */
+  background: #121212;
 }
 
 .container {
@@ -41,7 +41,6 @@ body {
   grid-gap: 10px;
 }
 
-/* All buttons have round style */
 button {
   width: 70px;
   height: 70px;
@@ -59,13 +58,20 @@ button:hover {
   background: #3c3c3c;
 }
 
-/* Green color for operators like AC, DEL, %, /, *, -, + */
+button:focus-visible {
+  outline: 3px solid #ffd166;
+  outline-offset: 2px;
+}
+
 .operator {
   color: #00ff6a;
 }
 
-/* Special styling for Equal button */
 .equalBtn {
   background: #ff9f0a;
-  color: blac
+  color: black;
+}
+
+.equalBtn:hover {
+  background: #ffb340;
 }
