@@ -3,10 +3,10 @@
 Three front-end tasks built during my Web Development internship at CodSoft (July 2025), using HTML, CSS and JavaScript.
 
 ## Live Demo
-- Home: https://nikhilraj7654.github.io/codsoft-internship/
-- Task 1, Portfolio: https://nikhilraj7654.github.io/codsoft-internship/portfolio/
-- Task 2, Landing Page: https://nikhilraj7654.github.io/codsoft-internship/landing-page/
-- Task 3, Calculator: https://nikhilraj7654.github.io/codsoft-internship/calculator/
+- Home: https://nikhilraj7654.github.io/CODSOFT/
+- Task 1, Portfolio: https://nikhilraj7654.github.io/CODSOFT/portfolio/
+- Task 2, Landing Page: https://nikhilraj7654.github.io/CODSOFT/landing-page/
+- Task 3, Calculator: https://nikhilraj7654.github.io/CODSOFT/calculator/
 
 ## Tasks
 
