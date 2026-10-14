@@ -1,0 +1,84 @@
+:root {
+  --navy: #12263f;
+  --amber: #ffb703;
+  --bg: #f5f7fa;
+  --card: #ffffff;
+  --text: #1c2733;
+  --muted: #5a6a7a;
+  --line: #dde3ea;
+  --link: #1d4ed8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1520;
+    --card: #15212f;
+    --text: #e8eef5;
+    --muted: #9fb0c2;
+    --line: #243445;
+    --link: #8fb0ff;
+  }
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Poppins", "Segoe UI", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+
+a { color: var(--link); }
+a:focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; border-radius: 3px; }
+
+.hero {
+  background: var(--navy);
+  color: #fff;
+  text-align: center;
+  padding: 110px 20px 100px;
+}
+.hello { color: var(--amber); font-weight: 500; margin-bottom: 10px; }
+.hero h1 { font-size: clamp(2.2rem, 7vw, 3.6rem); line-height: 1.15; margin-bottom: 18px; }
+.intro { max-width: 540px; margin: 0 auto 32px; color: #c9d6e6; font-size: 1.05rem; }
+
+.buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.btn {
+  padding: 12px 26px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid var(--amber);
+}
+.btn.solid { background: var(--amber); color: #1b1b1b; }
+.btn.outline { color: #fff; }
+.btn:hover { opacity: 0.88; }
+
+.block { max-width: 1000px; margin: 0 auto; padding: 70px 20px 20px; }
+.block h2 { font-size: 1.8rem; margin-bottom: 26px; }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 20px; }
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.card h3 { font-size: 1.1rem; margin-bottom: 8px; }
+.card p { color: var(--muted); font-size: 0.95rem; }
+.card .links { margin-top: auto; padding-top: 16px; display: flex; gap: 18px; font-weight: 500; }
+
+.contact p { color: var(--muted); margin-bottom: 18px; }
+.contact ul { list-style: none; display: grid; gap: 10px; }
+.contact li { display: flex; gap: 16px; flex-wrap: wrap; }
+.contact li span { width: 80px; color: var(--muted); }
+
+footer {
+  margin-top: 70px;
+  padding: 28px 20px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--line);
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nikhil Raj | Java Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Nikhil Raj, final-year BTech CSE student and Java full stack developer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="logo" href="#home">Nikhil Raj</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <h1>I build Java backends and the web pages that talk to them.</h1>
+      <p class="lead">I'm Nikhil Raj, a final-year BTech CSE student looking for a software developer role. I work mostly with Java, Spring Boot and SQL.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn" href="mailto:nikhilraj14443@gmail.com">Email me</a>
+        <a class="btn" href="../resume.pdf" download>Download resume</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>I'm studying Computer Science Engineering at Roorkee Institute of Technology (2023 to 2027). I like building small, working things end to end: a REST API, a rate limiter, a page that shows the result. Right now I'm sharpening my data structures in Java and learning how real backends are structured.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <dl class="skills">
+        <div><dt>Languages</dt><dd>Java, C, JavaScript, SQL</dd></div>
+        <div><dt>Backend</dt><dd>Spring Boot, Spring Data JPA, Hibernate, REST APIs, Multithreading</dd></div>
+        <div><dt>Frontend</dt><dd>HTML, CSS, JavaScript</dd></div>
+        <div><dt>Database</dt><dd>MySQL, SQL</dd></div>
+        <div><dt>Tools</dt><dd>GitHub, IntelliJ IDEA, Eclipse, VS Code</dd></div>
+      </dl>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <h3>Token Bucket Rate Limiter</h3>
+        <p>A rate limiter written in plain Java. It keeps a separate token bucket for each client using ConcurrentHashMap and atomic operations, so it stays safe under many threads.</p>
+        <p class="links">
+          <a href="https://rate-limiter-ep0f.onrender.com/" target="_blank" rel="noopener">Live demo</a>
+          <a href="https://github.com/nikhilraj7654/rate-limiter" target="_blank" rel="noopener">Source code</a>
+        </p>
+      </article>
+
+      <article class="project">
+        <h3>Employee Management System</h3>
+        <p>A Spring Boot REST API for managing employees. It has full create, read, update and delete, input checks with Bean Validation, and clean error responses through @ControllerAdvice. Data is stored through Spring Data JPA and Hibernate.</p>
+        <p class="links">
+          <a href="https://github.com/nikhilraj7654/employee-management-system" target="_blank" rel="noopener">Source code</a>
+        </p>
+      </article>
+
+      <article class="project">
+        <h3>Calculator and Landing Page</h3>
+        <p>Two more front-end tasks from my CodSoft internship. The calculator uses HTML, CSS and JavaScript. The landing page is pure HTML and CSS, with a hero section, project showcase and contact section.</p>
+        <p class="links">
+          <a href="../calculator/">Calculator</a>
+          <a href="../landing-page/">Landing page</a>
+        </p>
+      </article>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <article class="job">
+        <h3>Web Development Intern, CodSoft</h3>
+        <p class="when">July 2025, 4-week virtual internship</p>
+        <p>Built three front-end tasks: a personal portfolio website, a landing page and a calculator, using HTML, CSS and JavaScript.</p>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>The quickest way to reach me is email.</p>
+      <p class="links big">
+        <a href="mailto:nikhilraj14443@gmail.com">nikhilraj14443@gmail.com</a>
+        <a href="../resume.pdf" download>Resume (PDF)</a>
+        <a href="https://github.com/nikhilraj7654" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/nikhil-raj-87341728b" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>Nikhil Raj</footer>
+</body>
+</html>
